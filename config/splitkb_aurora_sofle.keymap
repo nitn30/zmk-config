@@ -52,15 +52,15 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |OLED |      |      |       |       |      |                |      |      |       |      |       |   +   |
-// |     | INS  |      | MENU  |       |      |                | HOME | HOME |   ^   | END  |       |       |
-// |     | ALL  |      | SPOT  | FIND  | CAPS |                | END |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | PREV |       | NXT  |       |       |
+// |     | INS  |      | MENU  |       |      |                | PG_UP | HOME |   ^   | END  |       |       |
+// |     | ALL  |      | SPOT  | FIND  | CAPS |                | PG_DN |   <- |   v   |  ->  |  DEL  | BKSPC |
+// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      | HOME  | PREV |       | NXT  |  END  |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &ext_power EP_TOG     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &kp KP_PLUS
-&trans     &kp INS      &trans       &kp K_CMENU       &trans       &trans                   &kp HOME &kp LG(LEFT) &kp UP   &kp LG(RIGHT)    &trans  &trans
-&trans     &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)      &kp CLCK                 &kp END &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-&trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans  &trans    &kp LA(LEFT)    &trans   &kp LA(RIGHT)    &trans  &trans
+&trans     &kp INS      &trans       &kp K_CMENU       &trans       &trans                   &kp PG_UP &kp LG(LEFT) &kp UP   &kp LG(RIGHT)    &trans  &trans
+&trans     &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)      &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
+&trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans  &kp HOME    &kp LA(LEFT)    &trans   &kp LA(RIGHT)    &kp END  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
