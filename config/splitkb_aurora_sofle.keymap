@@ -52,13 +52,13 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |OLED |      |      |       |       |      |                |      |      |       |      |       |   +   |
-// |     | INS  |      |       |       |      |                | PGUP | HOME |   ^   | END  |       |       |
+// |     | INS  |      | MENU  |       |      |                | PGUP | HOME |   ^   | END  |       |       |
 // |     | ALL  |      | SPOT  | FIND  | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | PREV |       | NXT  |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &ext_power EP_TOG     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &kp KP_PLUS
-&trans     &kp INS      &trans       &trans       &trans       &trans                   &kp PG_UP &kp HOME &kp UP   &kp END    &trans  &trans
+&trans     &kp INS      &trans       &kp K_CMENU       &trans       &trans                   &kp PG_UP &kp HOME &kp UP   &kp END    &trans  &trans
 &trans     &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)      &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans  &trans    &kp LA(LEFT)    &trans   &kp LA(RIGHT)    &trans  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
