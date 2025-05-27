@@ -52,15 +52,15 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |     |      |      |       |       |      |                |      |      |       |      |       |       |
-// |     | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
-// |     | ALL  |      |       | FIND  | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
+// |     | INS  |      |       |       |      |                | PGUP | PGDN |   ^   | PGUP |       |       |
+// |     | ALL  |      | SPOT  | FIND  | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
+// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | PREV |       | NXT  |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &trans     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &trans  &trans
-&trans     &kp LG(A)    &trans       &kp LG(F)    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-&trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
+&trans     &kp INS      &trans       &trans       &trans       &trans                   &kp PG_UP &kp PG_DN &kp UP   &kp PG_UP    &trans  &trans
+&trans     &kp LG(A)    &kp LG(SPACE) &kp LG(F)    &trans      &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
+&trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans  &trans    &kp LA(LEFT)    &trans   &LA(RIGHT)    &trans  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
