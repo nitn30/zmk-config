@@ -52,14 +52,14 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |OLED |      |      |       |       |      |                |      |      |       |      |       |   +   |
-// |     | INS  |      | MENU  |       |      |                | PGUP | HOME |   ^   | END  |       |       |
-// |     | ALL  |      | SPOT  | FIND  | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
+// |     | INS  |      | MENU  |       |      |                | HOME | HOME |   ^   | END  |       |       |
+// |     | ALL  |      | SPOT  | FIND  | CAPS |                | END |   <- |   v   |  ->  |  DEL  | BKSPC |
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | PREV |       | NXT  |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &ext_power EP_TOG     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &kp KP_PLUS
-&trans     &kp INS      &trans       &kp K_CMENU       &trans       &trans                   &kp PG_UP &kp LG(LEFT) &kp UP   &kp LG(RIGHT)    &trans  &trans
-&trans     &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)      &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
+&trans     &kp INS      &trans       &kp K_CONTEXTMENU       &trans       &trans                   &kp HOME &kp LG(LEFT) &kp UP   &kp LG(RIGHT)    &trans  &trans
+&trans     &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)      &kp CLCK                 &kp END &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans  &trans    &kp LA(LEFT)    &trans   &kp LA(RIGHT)    &trans  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
