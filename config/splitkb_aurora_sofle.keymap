@@ -52,15 +52,15 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |OLED |      |      |       |       |      |                |      |      |        |  [   |   ]   |   +   |
-// |     | INS  |      | MENU  |       |      |                | PG_UP | HOME |   ^   | END  |       |       |
+// |     | INS  |      | MENU  |       |      |                | PG_UP | PREV |   ^   | NXT  |       |       |
 // |     | ALL  |      | SPOT  | FIND  | CAPS |                | PG_DN |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      | HOME  | PREV |       | NXT  |  END  |       |
+// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      | HOME  | HOME |       | END  |  END  |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &ext_power EP_TOG     &trans       &trans       &trans       &trans       &trans           &trans    &trans       &trans         &kp LBKT         &kp RBKT  &kp KP_PLUS
-&trans     &kp INS      &trans       &kp K_CMENU       &trans       &trans                 &kp PG_UP &kp LG(LEFT) &kp UP         &kp LG(RIGHT)    &trans    &trans
+&trans     &kp INS      &trans       &kp K_CMENU       &trans       &trans                 &kp PG_UP &kp LA(LEFT) &kp UP         &kp LA(RIGHT)    &trans    &trans
 &trans     &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)      &kp CLCK                 &kp PG_DN &kp LEFT     &kp DOWN       &kp RIGHT        &kp DEL   &kp BSPC
-&trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans     &kp HOME  &kp LA(LEFT) &kp LC(HOME)   &kp LA(RIGHT)    &kp END   &trans
+&trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans     &kp HOME  &kp LG(LEFT) &kp LC(HOME)   &kp LG(RIGHT)    &kp END   &trans
                         &trans       &trans       &trans       &trans  &trans   &trans     &trans    &trans    &trans   &trans
             >;
 
