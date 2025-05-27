@@ -35,8 +35,8 @@
 // ------------------------------------------------------------------------------------------------------------
 // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
 // | `     |   1 |   2 |   3  |   4  |   5  |                   |   6  |   L_TAB  |   U_SP   |   R_TAB  |    0  |  F12  |
-// |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  L_SP    |  D_SP    |  r_SP   |   )   |   |   |
-// |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  BACK    |  ;       |  FWD |   \   |       |
+// |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  L_SP    |  D_SP    |  r_SP    |   )   |   |   |
+// |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  BACK    |  ;       |  FWD     |   \   |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
@@ -58,7 +58,7 @@
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &ext_power EP_TOG     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &kp KP_PLUS
-&trans     &kp INS      &trans       &kp K_CONTEXTMENU       &trans       &trans                   &kp HOME &kp LG(LEFT) &kp UP   &kp LG(RIGHT)    &trans  &trans
+&trans     &kp INS      &trans       &kp K_CMENU       &trans       &trans                   &kp HOME &kp LG(LEFT) &kp UP   &kp LG(RIGHT)    &trans  &trans
 &trans     &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)      &kp CLCK                 &kp END &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans  &trans   &trans  &trans    &kp LA(LEFT)    &trans   &kp LA(RIGHT)    &trans  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
