@@ -53,12 +53,12 @@
 // ------------------------------------------------------------------------------------------------------------
 // |OLED |      |      |       |       |      |                |      |      |        |  [   |   ]   |   +   |
 // |     | INS  |      | MENU  |       |      |                | PG_UP | PREV |   ^   | NXT  |       |       |
-// |     | ALL  |      | SPOT  | FIND  | CAPS |                | PG_DN |   <- |   v   |  ->  |  DEL  | BKSPC |
+// |     | ALL  | SAVE | SPOT  | FIND  | CAPS |                | PG_DN |   <- |   v   |  ->  |  DEL  | BKSPC |
 // |     | UNDO | CUT  | COPY  | PASTE | REDO |      |  |      | HOME  | HOME |       | END  |  END  |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&ext_power EP_TOG &trans       &kp C_MENU   &kp LC(F2)   &trans       &trans                          &trans    &trans       &trans         &kp LBKT         &kp RBKT  &kp KP_PLUS
-&trans            &kp INS      &kp K_MENU   &kp K_CONTEXT_MENU &trans       &trans                          &kp PG_UP &kp LA(LEFT) &kp UP         &kp LA(RIGHT)    &trans    &trans
+&ext_power EP_TOG &trans       &trans       &kp K_APPLICATION       &trans       &trans                          &trans    &trans       &trans         &kp LBKT         &kp RBKT  &kp KP_PLUS
+&trans            &kp INS      &trans       &kp K_APP    &trans       &trans                          &kp PG_UP &kp LA(LEFT) &kp UP         &kp LA(RIGHT)    &trans    &trans
 &trans            &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)   &kp CLCK                        &kp PG_DN &kp LEFT     &kp DOWN       &kp RIGHT        &kp DEL   &kp BSPC
 &trans            &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(LS(Z)) &trans   &trans   &kp HOME  &kp LG(LEFT) &kp LC(HOME)   &kp LG(RIGHT)    &kp END   &trans
                                &trans       &trans       &trans       &trans        &trans   &trans   &trans    &trans       &trans         &trans
@@ -68,3 +68,15 @@
         };
     };
 };
+
+
+/*
+ideas:
+	dbl tap home/end = ctrl + home/end
+	paste and match style
+	hold esc / modifiers for force quit
+	both modifiers + arrows = music controls
+		opening and selecting music from folder?
+
+*/
+
