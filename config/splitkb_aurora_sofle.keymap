@@ -57,8 +57,8 @@
 // |     | UNDO | CUT  | COPY  | PASTE | REDO |      |  |      | HOME  | HOME |       | END  |  END  |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&ext_power EP_TOG &trans       &trans       &trans       &trans       &trans                          &trans    &trans       &trans         &kp LBKT         &kp RBKT  &kp KP_PLUS
-&trans            &kp INS      &trans       &trans       &trans       &trans                          &kp PG_UP &kp LA(LEFT) &kp UP         &kp LA(RIGHT)    &trans    &trans
+&ext_power EP_TOG &trans       &kp C_MENU   &kp LC(F2)   &trans       &trans                          &trans    &trans       &trans         &kp LBKT         &kp RBKT  &kp KP_PLUS
+&trans            &kp INS      &kp K_MENU   &kp K_CONTEXT_MENU &trans       &trans                          &kp PG_UP &kp LA(LEFT) &kp UP         &kp LA(RIGHT)    &trans    &trans
 &trans            &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)   &kp CLCK                        &kp PG_DN &kp LEFT     &kp DOWN       &kp RIGHT        &kp DEL   &kp BSPC
 &trans            &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(LS(Z)) &trans   &trans   &kp HOME  &kp LG(LEFT) &kp LC(HOME)   &kp LG(RIGHT)    &kp END   &trans
                                &trans       &trans       &trans       &trans        &trans   &trans   &trans    &trans       &trans         &trans
