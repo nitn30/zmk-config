@@ -51,17 +51,17 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |OLED |  =   |  -   |  +    |   {   |   }  |                |      |      |        |  [   |   ]   |   +   |
-// |     | QUIT | CLOSE| URL   | RFRSH | N_TAB|                | PG_UP | PREV |   ^   | NXT  |       |       |
-// |     | ALL  | SAVE | SPOT  | FIND  | CAPS |                | PG_DN |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE | REDO |      |  |      | HOME  | HOME |       | END  |  END  |       |
-//              |      |       |       |      |      |  |      |      |      |       |      |
+// |OLED |  =   |  -   |  +    |   {   |   }  |                |      |      |        |  [   |   ]    |   +   |
+// |     | QUIT | CLOSE| URL   | RFRSH | N_TAB|                | PG_UP | PREV |   ^   | NXT  | CMD_UP | BKSPC |
+// |     | ALL  | SAVE | SPOT  | FIND  | CAPS |                | PG_DN |   <- |   v   |  ->  | CMD_DWN|  DEL  |
+// |     | UNDO | CUT  | COPY  | PASTE | REDO |      |  |      | HOME  | HOME |       | END  |  END   |       |
+//              |      |       |       |      |      |  |      |       |      |       |      |
             bindings = <
-&ext_power EP_TOG &kp EQUAL    &kp MINUS    &kp KP_PLUS  &kp LBRC     &kp RBRC                        &trans       &trans       &trans         &kp LBKT         &kp RBKT    &kp KP_PLUS
-&trans            &kp LG(Q)    &kp LG(W)    &kp LG(L)    &kp LG(R)    &kp LG(T)                       &kp PG_UP    &kp LA(LEFT) &kp UP         &kp LA(RIGHT)    &trans      &trans
-&trans            &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)   &kp CLCK                        &kp PG_DN    &kp LEFT     &kp DOWN       &kp RIGHT        &kp DEL     &kp BSPC
-&trans            &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(LS(Z)) &trans   &trans   &kp LC(HOME) &kp LG(LEFT) &kp HOME   &kp LG(RIGHT)    &kp LC(END) &trans
-                               &trans       &trans       &trans       &trans        &trans   &trans   &trans    &trans       &trans         &trans
+&ext_power EP_TOG &kp EQUAL    &kp MINUS    &kp KP_PLUS  &kp LBRC     &kp RBRC                        &trans       &trans       &trans         &kp LBKT         &kp RBKT     &kp KP_PLUS
+&trans            &kp LG(Q)    &kp LG(W)    &kp LG(L)    &kp LG(R)    &kp LG(T)                       &kp PG_UP    &kp LA(LEFT) &kp UP         &kp LA(RIGHT)    &kp LG(UP)   &kp BSPC
+&trans            &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)   &kp CLCK                        &kp PG_DN    &kp LEFT     &kp DOWN       &kp RIGHT        &kp LG(DOWN) &kp DEL
+&trans            &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(LS(Z)) &trans   &trans   &kp LC(HOME) &kp LG(LEFT) &kp HOME       &kp LG(RIGHT)    &kp LC(END)  &trans
+                               &trans       &trans       &trans       &trans        &trans   &trans   &trans    &trans       &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
