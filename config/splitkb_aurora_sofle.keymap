@@ -51,16 +51,16 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |OLED |  =   |  -   |  +    |   {   |   }  |                |      |      |        |  [   |   ]    |   +   |
-// |     | QUIT | CLOSE| URL   | RFRSH | N_TAB|                | PG_UP | PREV |   ^   | NXT  | CMD_UP |  DEL  |
-// |     | ALL  | SAVE | SPOT  | FIND  | CAPS |                | PG_DN |   <- |   v   |  ->  | CMD_DWN|       |
+// |OLED |  =   |  -   |  +    |   {   |   }  |                |      |       |       |  [   |   ]    |   +   |
+// |     | QUIT | CLOSE| URL   | RFRSH | N_TAB|                | PG_UP | L_TAB|   ^   | R_TAB|  BACK  |  FWD  |
+// |     | ALL  | SAVE | SPOT  | FIND  | CAPS |                | PG_DN |   <- |   v   |  ->  | CMD_DWN|  DEL  |
 // |     | UNDO | CUT  | COPY  | PASTE | REDO |      |  |      | HOME  | HOME |       | END  |  END   |       |
 //              |      |       |       |      |      |  |      |       |      |       |      |
             bindings = <
 &ext_power EP_TOG &kp EQUAL    &kp MINUS    &kp KP_PLUS  &kp LBRC     &kp RBRC                        &trans       &trans       &trans         &kp LBKT         &kp RBKT     &kp KP_PLUS
-&trans            &kp LG(Q)    &kp LG(W)    &kp LG(L)    &kp LG(R)    &kp LG(T)                       &kp PG_UP    &kp LA(LEFT) &kp UP         &kp LA(RIGHT)    &kp LG(UP)   &kp DEL
-&trans            &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)   &kp CLCK                        &kp PG_DN    &kp LEFT     &kp DOWN       &kp RIGHT        &kp LG(DOWN) &trans
-&trans            &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(LS(Z)) &trans   &trans   &kp LC(HOME) &kp LG(LEFT) &kp HOME       &kp LG(RIGHT)    &kp LC(END)  &trans
+&trans            &kp LG(Q)    &kp LG(W)    &kp LG(L)    &kp LG(R)    &kp LG(T)                       &kp PG_UP    &kp LG(LA(LEFT)) &kp UP     &kp LG(LA(RIGHT))&kp LG(LBKT) &kp LG(RBKT) 
+&trans            &kp LG(A)    &kp LG(S)    &kp LG(SPACE) &kp LG(F)   &kp CLCK                        &kp PG_DN    &kp LEFT     &kp DOWN       &kp RIGHT        &kp LG(DOWN) &kp DEL
+&trans            &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(LS(Z)) &trans   &trans   &kp LC(HOME) &kp LC(LEFT) &kp HOME       &kp LC(RIGHT)    &kp LC(END)  &trans
                                &trans       &trans       &trans       &trans        &trans   &trans   &trans    &trans       &trans            &trans
             >;
 
@@ -72,7 +72,7 @@
 
 /*
 ideas:
-
+	
 	dbl tap home/end = ctrl + home/end
 //	paste and match style (shift + paste)
  
@@ -81,7 +81,28 @@ ideas:
 		opening and selecting music from folder?
 	both modifiers + numbers? = open/focus Finder TextEdit Vlc
 
+
+
+
+raise = navigation arrows
+raise + lower = space navigation arrows
+!!!!!!then will be able to toggle raise layer while momentary lower to switch spaces/tabs
+????also add excel functions to left hand (paste text values, right click menu, macros)
+
+
+
+excel:
+	column filter menu???
+	cmd+; for date
+
+	shift+f10(lower+0) = right click menu
 	F2 = edit text in excel cell. (lower+E for edit?)
-	macros for cell color selectiom
-	create new tab, paste and enter OR copy/paste into address bar
+	cmd+pgup/pgdwn = navigate tabs
+
+
+	paste text???  (ALT, E, S, V) or (ALT H V)
+	filter column (select top row of column??, ALT+DWN, F, A)
+	macros for cell color selectiom (ALT, H, H, LEFT, DOWN, ENTER), (ALT, H, H, LEFT, DOWN, DOWN, DOWN, ENTER)
+	create new tab, paste and enter OR copy/paste into address bar (CMD+L, CMD+V, ENTER)
+
 */
