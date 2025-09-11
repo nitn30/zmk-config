@@ -10,6 +10,12 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 
+    #define DEFAULT 0
+    #define LOWER 1
+    #define RAISE 2
+/*   #define ADJUST 3  */
+
+
 
 / {
 
@@ -17,13 +23,6 @@
 
     keymap {
 
-    #define DEFAULT 0
-    #define LOWER 1
-    #define RAISE 2
-/*
-   #define ADJUST 3  
-
-*/
 
         compatible = "zmk,keymap";
 
@@ -102,7 +101,7 @@
     };
 
 
-
+/*
  conditional_layers {
         compatible = "zmk,conditional-layers";
         adjust_layer {
@@ -110,7 +109,7 @@
             then-layer = <3>;
         };
 
-
+*/
 
 
 
