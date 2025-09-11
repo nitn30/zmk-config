@@ -81,7 +81,11 @@
         };
     };
 
-        adjust_layer {
+
+
+
+/*
+adjust_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |OLED |  =   |  -   |  +    |   {   |   }  |                |      |       |       |  [   |   ]    |   +   |
 // |     | QUIT | CLOSE| URL   | RFRSH | N_TAB|                | PG_UP | L_TAB|   ^   | R_TAB|  BACK  |  FWD  |
@@ -101,7 +105,7 @@
     };
 
 
-/*
+
  conditional_layers {
         compatible = "zmk,conditional-layers";
         adjust_layer {
